@@ -6,10 +6,9 @@ using Unity.UIWidgets.widgets;
 
 namespace UI.Test.Utility
 {
-    public class LayoutBuilder<T>
+    public class LayoutBuilder<T>:MutiChildBuilder<T>
     where T:LayoutBuilder<T>
     {
-        protected List<Widget> children = new List<Widget>();
 
         protected TextDirection? mTextDirection;
         protected VerticalDirection mVerticalDirection = Unity.UIWidgets.painting.VerticalDirection.down;
@@ -48,24 +47,6 @@ namespace UI.Test.Utility
         public T CrossAxisAlignment(CrossAxisAlignment crossAxisAlignment)
         {
             this.m_CrossAxisAlignment = crossAxisAlignment;
-            return this as T;
-        }
-        
-        public T Child(Widget child)
-        {
-            children.Add(child);
-            return this as T;
-        }
-
-        public T Children(IEnumerable<Widget> children)
-        {
-            this.children.AddRange(children);
-            return this as T;
-        }
-        
-        public T Children(params Widget[] children)
-        {
-            this.children.AddRange(children);
             return this as T;
         }
     }

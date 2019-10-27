@@ -12,7 +12,19 @@ namespace UI.Test.Utility
     public class ListViewBuilder
     {
         List<Widget> mChildren = new List<Widget>();
+        private bool mShrinkWrap = false;
         EdgeInsets mPadding = null;
+
+        /// <summary>
+        /// 此属性用于设置List是否根据子Widget总长度来设置自身长度，默认为false，即，默认情况下，List会尽可能占用更多空间
+        /// </summary>
+        /// <returns></returns>
+        public ListViewBuilder ShrinkWrap()
+        {
+            this.mShrinkWrap = true;
+            return this;
+        }
+        
         public static ListViewBuilder GetBuilder()
         {
             return new ListViewBuilder();
@@ -39,7 +51,7 @@ namespace UI.Test.Utility
         }
         public ListView End()
         {
-            return new ListView(children: mChildren, padding: mPadding);
+            return new ListView(children: mChildren, padding: mPadding,shrinkWrap:mShrinkWrap);
         }
     }
 }

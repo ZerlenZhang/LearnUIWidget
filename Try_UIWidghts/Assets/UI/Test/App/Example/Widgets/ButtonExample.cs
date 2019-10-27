@@ -30,28 +30,28 @@ namespace UI.Test.App
                                             .Data("Hello")
                                             .Alignment(TextAlign.center)
                                             .End())
-                                    .OnPressed(() => print("Click"))
+                                    .OnPressed(() => Debug.Log("Click"))
                                     .End())
                             .Child(Q.OutlineButton
                                 .Child(new Text("outline btn"))
-                                .OnPressed(() => print("click outlineBtn"))
+                                .OnPressed(() => Debug.Log("click outlineBtn"))
                                 .End())
                             .Child(Q.FlatButton
                                 .Child(new Text("FlatButton"))
-                                .OnPressed(() => print("click flatBtn"))
+                                .OnPressed(() => Debug.Log("click flatBtn"))
                                 .End())
                             .Child(Q.IconBtn
                                 .IconData(Icons.wifi)
                                 .Color(Colors.green)
-                                .OnPressed(() => print("click iconBtn"))
+                                .OnPressed(() => Debug.Log("click iconBtn"))
                                 .End())
                             .Child(Q.IconBtn
                                 .IconData(Icons.wifi)
-                                .OnPressed(() => print("click iconBtn"))
+                                .OnPressed(() => Debug.Log("click iconBtn"))
                                 .End())
                             .Child(Q.IconBtn
                                 .IconData(Icons.wifi)
-                                .OnPressed(() => print("click iconBtn"))
+                                .OnPressed(() => Debug.Log("click iconBtn"))
                                 .End())
                             .Child(Q.RaisButton
                                 .Color(Colors.blue)
@@ -60,7 +60,7 @@ namespace UI.Test.App
                                 .SplashColor(Colors.grey)
                                 .Child(new Text("Submit"))
                                 .Shape(new RoundedRectangleBorder(borderRadius:BorderRadius.circular(20.0f)))
-                                .OnPressed(()=>print("click fancy button"))
+                                .OnPressed(()=>Debug.Log("click fancy button"))
                                 .End())
                             .End()));
 
