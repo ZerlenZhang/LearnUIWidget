@@ -12,10 +12,19 @@
             <e p="App" t="Include">
               <e p="ClickCountApp.cs" t="Include" />
               <e p="Example" t="Include">
+                <e p="animation" t="Include">
+                  <e p="BasicAnimationExample.cs" t="Include" />
+                  <e p="RouteTransitionExample.cs" t="Include" />
+                  <e p="StaggerAnimationExample.cs" t="Include" />
+                </e>
                 <e p="Container" t="Include">
                   <e p="DecroationExample.cs" t="Include" />
                   <e p="PaddingExample.cs" t="Include" />
                   <e p="TransformExample.cs" t="Include" />
+                </e>
+                <e p="EventListener" t="Include">
+                  <e p="GestureDetecterExample.cs" t="Include" />
+                  <e p="PointerListenerExample.cs" t="Include" />
                 </e>
                 <e p="Layout" t="Include">
                   <e p="FlexExample.cs" t="Include" />
@@ -37,13 +46,23 @@
                   <e p="UnfiniteListViewExample.cs" t="Include" />
                 </e>
                 <e p="widgets" t="Include">
-                  <e p="ButtonExample.cs" t="Include" />
-                  <e p="CheckBoxExample.cs" t="Include" />
-                  <e p="ConstrainedBoxExmample.cs" t="Include" />
-                  <e p="IconExample.cs" t="Include" />
-                  <e p="ImageExample.cs" t="Include" />
-                  <e p="TextExample.cs" t="Include" />
-                  <e p="TextFieldExample.cs" t="Include" />
+                  <e p="BasicWidgets" t="Include">
+                    <e p="ButtonExample.cs" t="Include" />
+                    <e p="CheckBoxExample.cs" t="Include" />
+                    <e p="ConstrainedBoxExmample.cs" t="Include" />
+                    <e p="IconExample.cs" t="Include" />
+                    <e p="ImageExample.cs" t="Include" />
+                    <e p="TextExample.cs" t="Include" />
+                    <e p="TextFieldExample.cs" t="Include" />
+                  </e>
+                  <e p="CustomWidgets" t="Include">
+                    <e p="CustomWidgetExample.cs" t="Include" />
+                  </e>
+                  <e p="FunctionalWidgets" t="Include">
+                    <e p="InheritedWidgetExample.cs" t="Include" />
+                    <e p="ThemeExample.cs" t="Include" />
+                    <e p="WillPopScopeExample.cs" t="Include" />
+                  </e>
                 </e>
               </e>
               <e p="OnClickEventApp.cs" t="Include" />

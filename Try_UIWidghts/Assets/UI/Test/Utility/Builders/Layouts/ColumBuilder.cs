@@ -15,6 +15,8 @@ namespace UI.Test.Utility
         {
             return new Column(
                 crossAxisAlignment:m_CrossAxisAlignment,
+                mainAxisAlignment:mMainAxisAlignment,
+                textDirection:mTextDirection,
                 children: children);
         }
     }
